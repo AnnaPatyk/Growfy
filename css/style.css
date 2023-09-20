@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Poppins:wght@300;400;500&display=swap");
 *,
 *::before,
 *::after {
@@ -66,4 +67,14 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 81.25rem;
+  margin: 0rem auto;
 }/*# sourceMappingURL=style.css.map */
