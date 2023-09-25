@@ -22,3 +22,8 @@
    grid-template-columns: repeat($num-columns, $column-size);
    gap: $gap;
 }
+@mixin grid-no-repeat($column1, $column2, $gap) {
+   display: grid;
+   grid-template-columns: $column1 $column2;
+   gap: $gap;
+}

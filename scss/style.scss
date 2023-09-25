@@ -182,6 +182,8 @@ $color-81-10: #81818b1a;
 }
 
 .button--services {
+   @include font(0.675rem, 300, 1.08rem);
+   color: $color-9c;
    padding: 0.6875rem 1.175rem 0.6875rem 1.1875rem;
    border-radius: 0.75rem;
    border: 0.0625rem solid $color-129;
@@ -237,3 +239,58 @@ $color-81-10: #81818b1a;
 .card__container--two {
    @include grid(grid, 1, 1fr, 2rem);
 }
+
+//-----------blok four------------------------------------------------------------------
+.blok__four {
+   margin-bottom: 12rem;
+   gap: 4rem;
+}
+
+.four--title {
+   margin-bottom: 2.5rem;
+}
+.four--text {
+   max-width: 30.6875rem;
+   margin-bottom: 2.4375rem;
+}
+.list {
+   @include grid(grid, 1, 1fr, 1rem);
+}
+.list__item {
+   @include font(1rem, 300, 1.5rem);
+   color: $color-9c;
+   position: relative;
+   padding-left: 2.4375rem;
+}
+.list__item::before {
+   content: "";
+   background: $color-81-10 url(../img/blok4/check-solid\ 1.png) 50% 50% / 50% no-repeat;
+   width: 1rem;
+   height: 1rem;
+   display: inline-block;
+   padding: 1rem;
+   border-radius: 50%;
+   margin-left: -2.625rem;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.blok__four--photo {
+   @include grid-no-repeat(0.7fr, 0.3fr, 0rem);
+}
+.bloc__photo--box--one {
+   height: 49.0996rem;
+   border-radius: 44.625rem 0rem 23.625rem 23.625rem;
+   overflow: hidden;
+   img {
+      object-fit: cover;
+   }
+}
+.bloc__photo--box--two {
+   align-self: end;
+   border-radius: 181.438px 181.438px 181.438px 0px;
+   height: 181.438px;
+   overflow: hidden;
+   background: url(../img/blok4/orange-w.jfif) 100% 100% / cover no-repeat;
+}
+//--------------------------------------------

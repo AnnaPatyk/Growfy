@@ -302,6 +302,10 @@ a:hover {
 }
 
 .button--services {
+  font-size: 0.675rem;
+  font-weight: 300;
+  line-height: 1.08rem;
+  color: #9c9c9c;
   padding: 0.6875rem 1.175rem 0.6875rem 1.1875rem;
   border-radius: 0.75rem;
   border: 0.0625rem solid rgba(129, 129, 139, 0.2);
@@ -377,4 +381,71 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
+}
+
+.blok__four {
+  margin-bottom: 12rem;
+  gap: 4rem;
+}
+
+.four--title {
+  margin-bottom: 2.5rem;
+}
+
+.four--text {
+  max-width: 30.6875rem;
+  margin-bottom: 2.4375rem;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.list__item {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #9c9c9c;
+  position: relative;
+  padding-left: 2.4375rem;
+}
+
+.list__item::before {
+  content: "";
+  background: rgba(129, 129, 139, 0.1019607843) url(../img/blok4/check-solid\ 1.png) 50% 50%/50% no-repeat;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-left: -2.625rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.blok__four--photo {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  gap: 0rem;
+}
+
+.bloc__photo--box--one {
+  height: 49.0996rem;
+  border-radius: 44.625rem 0rem 23.625rem 23.625rem;
+  overflow: hidden;
+}
+.bloc__photo--box--one img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bloc__photo--box--two {
+  align-self: end;
+  border-radius: 181.438px 181.438px 181.438px 0px;
+  height: 181.438px;
+  overflow: hidden;
+  background: url(../img/blok4/orange-w.jfif) 100% 100%/cover no-repeat;
 }/*# sourceMappingURL=style.css.map */
