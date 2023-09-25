@@ -105,6 +105,9 @@ $color-81: #81818b;
 }
 
 //--------blok one--------------------------------------------------------------------------------------------------
+.blok__one {
+   margin-bottom: 12.0625rem;
+}
 
 .__one--title {
    margin-bottom: 1.75rem;
@@ -140,4 +143,38 @@ $color-81: #81818b;
    grid-column: 2/3;
    grid-row: 2/4;
    @include photo(15.1191rem, 26.4599rem, 23.625rem, hidden);
+}
+
+//---------blok two------------------------------------------------------------------------------------------------
+.blok__two--title {
+   text-align: center;
+   margin-bottom: 1.4375rem;
+   letter-spacing: 0.0625rem;
+   @include font(0.875rem, 300, 1.4rem);
+   text-transform: uppercase;
+}
+.blok__two--photo {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 1.875rem;
+   height: 4rem;
+}
+.box__photo--luminous {
+   background:
+      linear-gradient(90deg, #0d0d11 8%, rgba(0, 0, 0, 0) 100%),
+      url(../img/blok2/Luminous.png) 100% 100% / cover no-repeat;
+}
+.box__photo--sitemark {
+   background: url(../img/blok2/Sitemark.png) 100% 100% / cover no-repeat;
+}
+.box__photo--pronature {
+   background: url(../img/blok2/Pronaturepng.png) 100% 100% / cover no-repeat;
+}
+.box__photo--greenish {
+   background: url(../img/blok2/Greenish.png) 100% 100% / cover no-repeat;
+}
+.box__photo--weveless {
+   background:
+      linear-gradient(270deg, #0d0d11 8%, rgba(0, 0, 0, 0) 100%),
+      url(../img/blok2/Waveless.png) 100% 100% / cover no-repeat;
 }
