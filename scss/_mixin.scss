@@ -16,3 +16,9 @@
    border-radius: $radius;
    overflow: $overflow;
 }
+
+@mixin grid($grid, $num-columns, $column-size, $gap) {
+   display: $grid;
+   grid-template-columns: repeat($num-columns, $column-size);
+   gap: $gap;
+}

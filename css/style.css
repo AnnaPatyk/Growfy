@@ -94,11 +94,13 @@ a:hover {
   width: 100%;
   left: 0;
   top: 0;
+  background-color: #0d0d11;
 }
 
 .header__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0rem;
   align-items: center;
   min-height: 7.25rem;
 }
@@ -120,7 +122,8 @@ a:hover {
 }
 
 .menu__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
   gap: 0.375rem;
   justify-content: space-between;
   align-items: center;
@@ -210,6 +213,7 @@ a:hover {
 .blok__one--photo {
   display: grid;
   grid-template-columns: repeat(2, auto);
+  gap: 0rem;
   grid-template-rows: repeat(3, auto);
   justify-items: start;
   justify-content: center;
@@ -252,6 +256,10 @@ a:hover {
   overflow: hidden;
 }
 
+.blok__two {
+  margin-bottom: 9.0781rem;
+}
+
 .blok__two--title {
   text-align: center;
   margin-bottom: 1.4375rem;
@@ -287,4 +295,86 @@ a:hover {
 
 .box__photo--weveless {
   background: linear-gradient(270deg, #0d0d11 8%, rgba(0, 0, 0, 0) 100%), url(../img/blok2/Waveless.png) 100% 100%/cover no-repeat;
+}
+
+.blok__three {
+  margin-bottom: 12rem;
+}
+
+.button--services {
+  padding: 0.6875rem 1.175rem 0.6875rem 1.1875rem;
+  border-radius: 0.75rem;
+  border: 0.0625rem solid rgba(129, 129, 139, 0.2);
+  margin-bottom: 1.1875rem;
+}
+
+.three--title {
+  margin-bottom: 0.75rem;
+}
+
+.text--shared {
+  margin-bottom: 2.0625rem;
+}
+
+.three--text {
+  max-width: 30.6875rem;
+}
+
+.button--three {
+  padding: 1rem 1.7824rem 1rem 1.7949rem;
+}
+
+.blok__three--card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.9375rem;
+  padding: 3.4375rem 1.5625rem;
+  border-radius: 1.875rem;
+  background: rgba(129, 129, 139, 0.1019607843);
+}
+
+.card__img {
+  max-width: 4.7246rem;
+  max-height: 4.7246rem;
+  border-radius: 0rem;
+  overflow: hidden;
+}
+.card__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.68rem;
+  margin-bottom: 0.625rem;
+}
+
+.card__paragraph {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #81818b;
+}
+
+.card__container--two {
+  padding-bottom: 3rem;
+}
+
+.card__container--one {
+  padding-top: 3rem;
+}
+
+.card__container--one,
+.card__container--two {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
 }/*# sourceMappingURL=style.css.map */
