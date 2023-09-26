@@ -11,6 +11,9 @@ $color-129-20: rgba(129, 129, 139, 0.2);
 $color-81: #81818b;
 $color-81-10: #81818b1a;
 $position: rgba(129, 129, 139, 0.5);
+$border: #81818be5;
+$border--footer-button: #81818b4d;
+$footer-button: rgba(153, 153, 153, 1);
 
 .wrapper {
    background-color: $background-body;
@@ -449,4 +452,99 @@ $position: rgba(129, 129, 139, 0.5);
 }
 .blok__ten--button {
    align-self: center;
+}
+//-------------------footer------------------------------------------------------------------
+.footer__blok--one {
+   padding-block: 10rem;
+   @include grid(grid, 4, auto, 1rem);
+}
+.footer__box--social {
+   @include grid(grid, 1, 1fr, 2rem);
+}
+.footer__logo {
+   background: url(../img/logo-growfy.png) 100% 100% / cover no-repeat;
+}
+
+.footer--text {
+   max-width: 21.6668rem;
+}
+.social__link--box {
+   @include grid(grid, 5, auto, 1rem);
+   justify-content: left;
+}
+.social__link {
+   padding: 16px;
+   border-radius: 2.25rem;
+   border: 0.0625rem solid $border;
+   width: 2.25rem;
+   height: 2.25rem;
+}
+.in {
+   background: url(../img/blok8/in.png) 50% 50% / 1.25rem no-repeat;
+}
+.twit {
+   background: url(../img/blok8/tw.png) 50% 50% / 1.25rem no-repeat;
+}
+.facebook {
+   background: url(../img/blok8/f.png) 50% 50% / 1.25rem no-repeat;
+}
+.youtube {
+   background: url(../img/blok8/y.png) 50% 50% / 1.25rem no-repeat;
+}
+.instagram {
+   background: url(../img/blok8/inst.png) 50% 50% / 1.25rem no-repeat;
+}
+
+.footer__box--list {
+   @include grid(grid, 1, 1fr, 1.875rem);
+}
+.footer__title {
+   @include font(1.25rem, 500, 1.5rem);
+   letter-spacing: 0.0625rem;
+}
+.list {
+   @include grid(grid, 1, 1fr, 1.5244rem);
+   li {
+      @include font(1rem, 300, 1.6rem);
+      color: $color-9c;
+   }
+}
+.footer__box--subscribe {
+   @include grid(grid, 1, 1fr, 1.875rem);
+   align-content: start;
+}
+.footer--text,
+.footer--button--blue {
+   margin: 0;
+}
+.blok__button--footer {
+   @include grid-no-repeat(0.5963fr, 0.3617fr, 1rem);
+}
+.footer--button {
+   width: 100%;
+   padding: 0.9063rem 1rem;
+   border-radius: 3.125rem;
+   border: 0.0625rem solid $border--footer-button;
+   @include font(1rem, 400, normal);
+   color: $footer-button;
+   text-align: center;
+}
+.footer--button--blue {
+   width: 100%;
+   padding: 0.9063rem 1rem;
+   @include font(0.875rem, 500, 1.4rem);
+   letter-spacing: 0.125rem;
+}
+.button__name {
+   display: inline-block;
+   text-align: center;
+}
+.footer__blok--two {
+   padding-block: 2.8438rem;
+   text-align: center;
+   border-top: 0.125rem solid $color-129-20;
+   p {
+      @include font(0.875rem, 300, 1.4rem);
+      color: $color-9c;
+   }
 }

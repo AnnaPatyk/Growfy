@@ -671,4 +671,141 @@ a:hover {
 
 .blok__ten--button {
   align-self: center;
+}
+
+.footer__blok--one {
+  padding-block: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1rem;
+}
+
+.footer__box--social {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.footer__logo {
+  background: url(../img/logo-growfy.png) 100% 100%/cover no-repeat;
+}
+
+.footer--text {
+  max-width: 21.6668rem;
+}
+
+.social__link--box {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 1rem;
+  justify-content: left;
+}
+
+.social__link {
+  padding: 16px;
+  border-radius: 2.25rem;
+  border: 0.0625rem solid rgba(129, 129, 139, 0.8980392157);
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.in {
+  background: url(../img/blok8/in.png) 50% 50%/1.25rem no-repeat;
+}
+
+.twit {
+  background: url(../img/blok8/tw.png) 50% 50%/1.25rem no-repeat;
+}
+
+.facebook {
+  background: url(../img/blok8/f.png) 50% 50%/1.25rem no-repeat;
+}
+
+.youtube {
+  background: url(../img/blok8/y.png) 50% 50%/1.25rem no-repeat;
+}
+
+.instagram {
+  background: url(../img/blok8/inst.png) 50% 50%/1.25rem no-repeat;
+}
+
+.footer__box--list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.875rem;
+}
+
+.footer__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.0625rem;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5244rem;
+}
+.list li {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  color: #9c9c9c;
+}
+
+.footer__box--subscribe {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.875rem;
+  align-content: start;
+}
+
+.footer--text,
+.footer--button--blue {
+  margin: 0;
+}
+
+.blok__button--footer {
+  display: grid;
+  grid-template-columns: 0.5963fr 0.3617fr;
+  gap: 1rem;
+}
+
+.footer--button {
+  width: 100%;
+  padding: 0.9063rem 1rem;
+  border-radius: 3.125rem;
+  border: 0.0625rem solid rgba(129, 129, 139, 0.3019607843);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  color: rgb(153, 153, 153);
+  text-align: center;
+}
+
+.footer--button--blue {
+  width: 100%;
+  padding: 0.9063rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0.125rem;
+}
+
+.button__name {
+  display: inline-block;
+  text-align: center;
+}
+
+.footer__blok--two {
+  padding-block: 2.8438rem;
+  text-align: center;
+  border-top: 0.125rem solid rgba(129, 129, 139, 0.2);
+}
+.footer__blok--two p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+  color: #9c9c9c;
 }/*# sourceMappingURL=style.css.map */
