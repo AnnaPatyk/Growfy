@@ -9,6 +9,7 @@ $color-9c: #9c9c9c;
 $color-129: rgba(129, 129, 139, 0.2);
 $color-81: #81818b;
 $color-81-10: #81818b1a;
+$position: rgba(129, 129, 139, 0.5);
 
 .wrapper {
    background-color: $background-body;
@@ -385,3 +386,45 @@ $color-81-10: #81818b1a;
    justify-content: left;
 }
 //---------------blok nine----------------------------------------------------------------------------------------
+.blok__nine--card {
+   border-radius: 1.5rem;
+   overflow: hidden;
+   background-color: $color-129;
+}
+.photo__nine--card {
+   position: relative;
+   @include photo(100%, 12.125rem, 0rem, hidden);
+   margin-bottom: 1.625rem;
+   img {
+      @include img;
+   }
+}
+.content__nine--card {
+   padding: 1.625rem;
+}
+.text__nine--card {
+   margin-bottom: 1.25rem;
+   @include font(1rem, 300, 1.5rem);
+   color: $color-9c;
+}
+.taitle__nine--card {
+   margin-bottom: 1.875rem;
+   @include font(1.2rem, 400, 1.68rem);
+}
+.link__nine--card {
+   @include font(0.875rem, 300, 0.7125rem);
+   color: $color-3D96F4;
+}
+.position {
+   display: inline-block;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 2;
+   p {
+      padding: 0.5625rem 0.6125rem 0.5625rem 0.625rem;
+      border-radius: 0rem 0.625rem 0rem 0rem;
+      background: $position;
+      @include font(0.875rem, 300, 1.4rem);
+   }
+}

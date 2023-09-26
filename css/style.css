@@ -579,4 +579,68 @@ a:hover {
   grid-template-columns: repeat(5, auto);
   gap: 0.3125rem;
   justify-content: left;
+}
+
+.blok__nine--card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: rgba(129, 129, 139, 0.2);
+}
+
+.photo__nine--card {
+  position: relative;
+  max-width: 100%;
+  max-height: 12.125rem;
+  border-radius: 0rem;
+  overflow: hidden;
+  margin-bottom: 1.625rem;
+}
+.photo__nine--card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.content__nine--card {
+  padding: 1.625rem;
+}
+
+.text__nine--card {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #9c9c9c;
+}
+
+.taitle__nine--card {
+  margin-bottom: 1.875rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.68rem;
+}
+
+.link__nine--card {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 0.7125rem;
+  color: #3d96f4;
+}
+
+.position {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.position p {
+  padding: 0.5625rem 0.6125rem 0.5625rem 0.625rem;
+  border-radius: 0rem 0.625rem 0rem 0rem;
+  background: rgba(129, 129, 139, 0.5);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.4rem;
 }/*# sourceMappingURL=style.css.map */
