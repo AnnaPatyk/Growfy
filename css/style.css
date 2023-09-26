@@ -501,4 +501,82 @@ a:hover {
 
 .eight--button {
   padding: 1rem 2.6057rem 1rem 2.6182rem;
+}
+
+.blok__seven--nine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 12rem;
+}
+
+.blok__seven--card {
+  background-color: rgba(129, 129, 139, 0.2);
+  border-radius: 1.875rem;
+  padding: 4rem 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.0625rem;
+}
+
+.customer--info {
+  display: grid;
+  grid-template-columns: 0.25fr 0.58fr;
+  gap: 1rem;
+}
+
+.customer--img {
+  max-width: 4.2519rem;
+  max-height: 4.2519rem;
+  border-radius: 0rem 4.2519rem 4.2519rem 4.2519rem;
+  overflow: hidden;
+}
+.customer--img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.customer--img--blue {
+  border-radius: 4.2519rem 0rem 4.2519rem 4.2519rem;
+}
+
+.customer--img--green {
+  border-radius: 4.2519rem 4.2519rem 0rem 4.2519rem;
+}
+
+.customer--name {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.4375rem;
+}
+.customer--name .name {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+.customer--name .company {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+  color: #9c9c9c;
+}
+
+.title--card {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.message--card {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: #9c9c9c;
+}
+
+.stars {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 0.3125rem;
+  justify-content: left;
 }/*# sourceMappingURL=style.css.map */

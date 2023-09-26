@@ -336,4 +336,52 @@ $color-81-10: #81818b1a;
    padding: 1rem 2.6057rem 1rem 2.6182rem;
 }
 
-//----------------------------------------------------------------------------------------------------------------------------------------------------
+//----------- blok seven-----------------------------------------------------------------------------------------------------------------------------------------
+.blok__seven--nine {
+   @include grid(grid, 3, 1fr, 2rem);
+   margin-bottom: 12rem;
+}
+.blok__seven--card {
+   background-color: $color-129;
+   border-radius: 1.875rem;
+   padding: 4rem 2.5rem;
+   @include grid(grid, 1, 1fr, 2.0625rem);
+}
+.customer--info {
+   @include grid-no-repeat(0.25fr, 0.58fr, 1rem);
+}
+.customer--img {
+   @include photo(4.2519rem, 4.2519rem, 0rem 4.2519rem 4.2519rem 4.2519rem, hidden);
+   img {
+      object-fit: cover;
+   }
+}
+.customer--img--blue {
+   border-radius: 4.2519rem 0rem 4.2519rem 4.2519rem;
+}
+.customer--img--green {
+   border-radius: 4.2519rem 4.2519rem 0rem 4.2519rem;
+}
+.customer--name {
+   @include grid(grid, 1, 1fr, 0.4375rem);
+   .name {
+      @include font(1rem, 300, 1.5rem);
+   }
+   .company {
+      @include font(0.875rem, 300, 1.4rem);
+      color: $color-9c;
+   }
+}
+
+.title--card {
+   @include font(2rem, 400, 2.8rem);
+}
+.message--card {
+   @include font(1rem, 300, 1.5rem);
+   color: $color-9c;
+}
+.stars {
+   @include grid(grid, 5, auto, 0.3125rem);
+   justify-content: left;
+}
+//---------------blok nine----------------------------------------------------------------------------------------
