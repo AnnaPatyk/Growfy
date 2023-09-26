@@ -791,6 +791,8 @@ a:hover {
   font-weight: 500;
   line-height: 1.4rem;
   letter-spacing: 0.125rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .button__name {
@@ -808,4 +810,107 @@ a:hover {
   font-weight: 300;
   line-height: 1.4rem;
   color: #9c9c9c;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 13, 17, 0.8745098039);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.875rem 1.25rem;
+}
+
+.popup__content {
+  position: relative;
+  background-color: rgba(129, 129, 139, 0.8980392157);
+  color: #0d0d11;
+  max-width: 50rem;
+  padding: 1.875rem;
+  border-radius: 1rem;
+}
+
+.popup__close {
+  position: absolute;
+  right: 1rem;
+  top: 0.625rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.popup__title {
+  color: #3d96f4;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+form p {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  gap: 1rem;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+form p label {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  width: 5rem;
+}
+
+.form--button {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0;
+}
+.form--button input {
+  padding-inline: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 0.5s;
+  color: #fff;
+  border: none;
+}
+
+.reset {
+  background-color: rgba(129, 129, 139, 0.8980392157);
+}
+
+.reset:hover {
+  background-color: rgba(157, 157, 157, 0.8980392157);
+  box-shadow: 0rem 0rem 0.75rem #cccbcb;
+}
+
+.submit {
+  background-color: #3d96f4;
+  justify-self: center;
+}
+
+.submit:hover {
+  background-color: #437cba;
+  box-shadow: 0rem 0rem 0.75rem #479ffd;
 }/*# sourceMappingURL=style.css.map */

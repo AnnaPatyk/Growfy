@@ -27,3 +27,7 @@
    grid-template-columns: $column1 $column2;
    gap: $gap;
 }
+@mixin hover($color-hover, $shadow-color) {
+   background-color: $color-hover;
+   box-shadow: 0rem 0rem 0.75rem $shadow-color;
+}

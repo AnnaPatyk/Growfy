@@ -14,6 +14,11 @@ $position: rgba(129, 129, 139, 0.5);
 $border: #81818be5;
 $border--footer-button: #81818b4d;
 $footer-button: rgba(153, 153, 153, 1);
+$background-pop-up: #0d0d11df;
+$reset-hover: #9d9d9de5;
+$blue-hover: #437cba;
+$shadow-w: #cccbcb;
+$shadow-d: #479ffd;
 
 .wrapper {
    background-color: $background-body;
@@ -534,6 +539,8 @@ $footer-button: rgba(153, 153, 153, 1);
    padding: 0.9063rem 1rem;
    @include font(0.875rem, 500, 1.4rem);
    letter-spacing: 0.125rem;
+   text-align: center;
+   vertical-align: middle;
 }
 .button__name {
    display: inline-block;
@@ -547,4 +554,90 @@ $footer-button: rgba(153, 153, 153, 1);
       @include font(0.875rem, 300, 1.4rem);
       color: $color-9c;
    }
+}
+//-----------------form pop up-------------------------------------------
+.popup {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: $background-pop-up;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: all 0.8s ease 0s;
+}
+.popup:target {
+   opacity: 1;
+   visibility: visible;
+}
+.popup__body {
+   min-height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1.875rem 1.25rem;
+}
+.popup__content {
+   position: relative;
+   background-color: $border;
+   color: $background-body;
+   max-width: 50rem;
+   padding: 1.875rem;
+   border-radius: 1rem;
+}
+.popup__close {
+   position: absolute;
+   right: 1rem;
+   top: 0.625rem;
+   font-size: 1.25rem;
+   color: $color-white;
+}
+.popup__title {
+   color: $color-3D96F4;
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-bottom: 1rem;
+}
+form {
+   p {
+      @include grid-no-repeat(0.3fr, 0.7fr, 1rem);
+      justify-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      label {
+         color: $color-white;
+         @include font(0.875rem, 500, 1.4rem);
+         width: 5rem;
+      }
+   }
+}
+.form--button {
+   @include grid-no-repeat(auto, auto, 1rem);
+   justify-content: center;
+   margin: 0;
+   input {
+      padding-inline: 1rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: 0.5s;
+      color: $color-white;
+      border: none;
+   }
+}
+.reset {
+   background-color: $border;
+}
+.reset:hover {
+   @include hover($reset-hover, $shadow-w);
+}
+.submit {
+   background-color: $color-3D96F4;
+   justify-self: center;
+}
+.submit:hover {
+   @include hover($blue-hover, $shadow-d);
 }

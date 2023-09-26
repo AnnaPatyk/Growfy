@@ -8,35 +8,35 @@
 </head>
 <body>
    <div class="wrapper">
-     <header class="header"> 
+     <header class="header" id="header"> 
       <div class="header__container __container">
        <div class="header__logo"><a href="#" class="logo"><img src="./img/logo-growfy.png" alt=""></a></div>
        <nav class="header--menu menu">
          <ul class="menu__list">
 
             <li class="menu__item">
-               <a href="" class="menu__link">Home</a>
+               <a href="#home" class="menu__link">Home</a>
             </li>
 
             <li class="menu__item">
-               <a href="" class="menu__link">About</a>
+               <a href="#about" class="menu__link">About</a>
             </li>
 
             <li class="menu__item">
-               <a href="" class="menu__link">Pages</a>
+               <a href="#pages" class="menu__link">Pages</a>
             </li>
 
             <li class="menu__item">
-               <a href="" class="menu__link">Services</a>
+               <a href="#sevises" class="menu__link">Services</a>
             </li>
 
             <li class="menu__item">
-               <a href="" class="menu__link">Cart</a>
+               <a href="#cart" class="menu__link">Cart</a>
                <a href="" class="menu__link link__zero">0</a>
             </li>
 
             <li class="menu__item button">
-               <a href="" class="menu__link">Get started</a>
+               <a href="#popup" class="menu__link">Get started</a>
             </li>
 
          </ul>
@@ -47,10 +47,10 @@
      </header>
    <div class="main__container __container">
 <!-- перший блок -->
-<div class="blok__one content__box">
+<div class="blok__one content__box "  id="home">
 
          <div class="blok__one--text">
-            <h3 class="title--shared __one--title">Marketing solutions that grow your business.</h3>
+            <h3 class="title--shared __one--title ">Marketing solutions that grow your business.</h3>
             <p class="text--shared __one--text">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis
             cursus, mi quis viverra ornare, eros dolor.
@@ -80,7 +80,7 @@
          </div>
 </div>
 <!-- третій блок -->
-<div class="blok__three content__box">
+<div class="blok__three content__box"  id="sevises">
          <div class="blok__three--text">
             <a href="" class="button--services">services</a>
             <h3 class="title--shared  three--title">Services we offer</h3>
@@ -163,7 +163,7 @@
 
 </div>
 <!-- пятий блок -->
-<div class="blok__five">
+<div class="blok__five" id="about">
    <div class="blok__five--content">
       <div class="card blok__five--card">
          <h4 class="title--shared card--title">1.2M+</h4>
@@ -291,7 +291,7 @@
 
 </div>
 <!-- блок девять -->
-<div class="blok__seven--nine">
+<div class="blok__seven--nine" id="pages">
 
    <div class="blok__nine--card">
       <div class="photo__nine--card">
@@ -423,6 +423,31 @@
 
    </footer>
 
+   </div>
+   <div id="popup" class="popup">
+      <div class="popup__body">
+         <div class="popup__content">
+            <a href="#header" class="popup__close">X</a>
+            <div class="popup__title"> <h3>Get start</h3></div>
+            <form method="post" action="" enctype="text/plain">
+            
+               <p>
+                  <label for="login" accesskey="l">login: </label>
+                  <input type="text" name="login" id="login">
+               </p>
+            
+               <p>
+                  <label for="pass" accesskey="p">Password:</label>
+                  <input type="password" name="pass" id="pass">
+               </p>
+            
+               <p class="form--button">
+                  <input class="reset" type="reset" value="Reset">
+                  <input class="submit" type="submit" value="Send">
+               </p>
+            </form>
+         </div>
+      </div>
    </div>
 </body>
 </html>
