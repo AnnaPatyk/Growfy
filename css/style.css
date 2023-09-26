@@ -444,8 +444,33 @@ a:hover {
 
 .bloc__photo--box--two {
   align-self: end;
-  border-radius: 181.438px 181.438px 181.438px 0px;
-  height: 181.438px;
+  border-radius: 11.3399rem 11.3399rem 11.3399rem 0rem;
+  height: 11.3399rem;
   overflow: hidden;
   background: url(../img/blok4/orange-w.jfif) 100% 100%/cover no-repeat;
+}
+
+.blok__five {
+  display: grid;
+  grid-template-columns: 0.5689fr 0.3793fr;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.blok__five--content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.blok__five--card {
+  padding: 2.5rem;
+}
+
+.blok__five--photo {
+  max-width: 31.1992rem;
+  max-height: 100%;
+  border-radius: 0rem 28.625rem 23.625rem 23.625rem;
+  overflow: hidden;
+  background: url(../img/blok5/orange-m.jfif) 100% 50%/cover no-repeat;
 }/*# sourceMappingURL=style.css.map */

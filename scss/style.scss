@@ -288,9 +288,25 @@ $color-81-10: #81818b1a;
 }
 .bloc__photo--box--two {
    align-self: end;
-   border-radius: 181.438px 181.438px 181.438px 0px;
-   height: 181.438px;
+   border-radius: 11.3399rem 11.3399rem 11.3399rem 0rem;
+   height: 11.3399rem;
    overflow: hidden;
    background: url(../img/blok4/orange-w.jfif) 100% 100% / cover no-repeat;
 }
-//--------------------------------------------
+
+//------- five blok-------------------------------------------------------------------------------------------------------
+.blok__five {
+   @include grid-no-repeat(0.5689fr, 0.3793fr, 2rem);
+   margin-bottom: 6rem;
+}
+.blok__five--content {
+   @include grid(grid, 2, 1fr, 2rem);
+}
+.blok__five--card {
+   padding: 2.5rem;
+}
+
+.blok__five--photo {
+   @include photo(31.1992rem, 100%, 0rem 28.625rem 23.625rem 23.625rem, hidden);
+   background: url(../img/blok5/orange-m.jfif) 100% 50% / cover no-repeat;
+}
