@@ -473,4 +473,32 @@ a:hover {
   border-radius: 0rem 28.625rem 23.625rem 23.625rem;
   overflow: hidden;
   background: url(../img/blok5/orange-m.jfif) 100% 50%/cover no-repeat;
+}
+
+.blok___six--eight {
+  display: grid;
+  grid-template-columns: 0.6403fr 0.3fr;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.blok___six--eight--content a {
+  margin-bottom: 1.5rem;
+}
+.blok___six--eight--content h3 {
+  margin-bottom: 0.75rem !important;
+}
+
+.blok__six--eight--button {
+  align-self: end;
+  justify-self: end;
+}
+
+.__six--eight--button {
+  margin: 0;
+}
+
+.eight--button {
+  padding: 1rem 2.6057rem 1rem 2.6182rem;
 }/*# sourceMappingURL=style.css.map */

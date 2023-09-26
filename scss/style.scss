@@ -310,3 +310,30 @@ $color-81-10: #81818b1a;
    @include photo(31.1992rem, 100%, 0rem 28.625rem 23.625rem 23.625rem, hidden);
    background: url(../img/blok5/orange-m.jfif) 100% 50% / cover no-repeat;
 }
+
+//-------------blok six eight----------------------------------------------------------------------------------------------------------------
+.blok___six--eight {
+   @include grid-no-repeat(0.6403fr, 0.3fr, 2rem);
+   justify-content: space-between;
+   margin-bottom: 4rem;
+}
+.blok___six--eight--content {
+   a {
+      margin-bottom: 1.5rem;
+   }
+   h3 {
+      margin-bottom: 0.75rem !important;
+   }
+}
+.blok__six--eight--button {
+   align-self: end;
+   justify-self: end;
+}
+.__six--eight--button {
+   margin: 0;
+}
+.eight--button {
+   padding: 1rem 2.6057rem 1rem 2.6182rem;
+}
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------
