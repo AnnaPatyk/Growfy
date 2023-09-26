@@ -972,4 +972,8 @@ form .input-element label {
   max-height: 12.5rem;
   border-radius: 1.875rem;
   overflow: hidden;
+}
+
+.menu__icon {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

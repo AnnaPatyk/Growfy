@@ -683,3 +683,10 @@ form {
    transform: translateX(-50%);
    @include photo(12.5rem, 12.5rem, 1.875rem, hidden);
 }
+//-----------burger menu----------------------------------------------------------------------
+.menu__icon {
+   display: none;
+}
+
+//--------------------------media------------------------------------
+@import "_media";
