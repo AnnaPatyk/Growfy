@@ -78,6 +78,9 @@ $shadow-d: #479ffd;
    background-color: $color-3D96F4;
    border-radius: 3.125rem;
 }
+.hover__item:hover {
+   border-top: 0.0625rem solid $color-white;
+}
 //--------common block-----------------------------------------------------------------------------------------
 .content__box {
    @include grid(grid, 2, 1fr, 2rem);
@@ -103,6 +106,9 @@ $shadow-d: #479ffd;
       letter-spacing: 0.125rem;
    }
 }
+.button:hover {
+   @include hover($blue-hover, $shadow-d);
+}
 .button--blue {
    padding: 1rem 1.5236rem 1rem 1.5361rem;
    background-color: $color-3D96F4;
@@ -111,6 +117,9 @@ $shadow-d: #479ffd;
 .button--gray {
    padding: 1rem 1.9455rem 1rem 1.9571rem;
    background-color: $color-129-20;
+}
+.button--gray:hover {
+   @include hover($reset-hover, $shadow-w);
 }
 
 //--------blok one--------------------------------------------------------------------------------------------------
@@ -200,7 +209,9 @@ $shadow-d: #479ffd;
    border: 0.0625rem solid $color-129-20;
    margin-bottom: 1.1875rem;
 }
-
+.button--services:hover {
+   @include hover($color-129, $shadow-w);
+}
 .three--title {
    margin-bottom: 0.75rem;
 }
@@ -534,6 +545,11 @@ $shadow-d: #479ffd;
    color: $footer-button;
    text-align: center;
 }
+.footer--button:hover,
+.social__link:hover {
+   @include hover($color-129, $shadow-w);
+}
+
 .footer--button--blue {
    width: 100%;
    padding: 0.9063rem 1rem;
@@ -584,7 +600,7 @@ $shadow-d: #479ffd;
    position: relative;
    background-color: $border;
    color: $background-body;
-   max-width: 50rem;
+   max-width: 50%;
    padding: 1.875rem;
    border-radius: 1rem;
 }
@@ -601,9 +617,11 @@ $shadow-d: #479ffd;
    font-size: 1.5rem;
    font-weight: 600;
    margin-bottom: 1rem;
+   text-shadow: 0rem 0rem 0.3125rem $background-pop-up;
 }
 form {
-   p {
+   p,
+   .input-element {
       @include grid-no-repeat(0.3fr, 0.7fr, 1rem);
       justify-items: center;
       justify-content: center;
@@ -619,7 +637,7 @@ form {
    @include grid-no-repeat(auto, auto, 1rem);
    justify-content: center;
    margin: 0;
-   input {
+   button {
       padding-inline: 1rem;
       border-radius: 1rem;
       overflow: hidden;
@@ -640,4 +658,28 @@ form {
 }
 .submit:hover {
    @include hover($blue-hover, $shadow-d);
+}
+.form--button--popup2 {
+   @include grid(grid, 1, 1fr, 0rem);
+   justify-content: center;
+   margin: 0;
+   button {
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: 0.5s;
+      color: $color-white;
+      border: none;
+   }
+}
+
+.pop__up--title {
+   font-size: 2.25rem;
+   text-shadow: 0rem 0rem 0.25rem $color-white;
+}
+.popup__img {
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   @include photo(12.5rem, 12.5rem, 1.875rem, hidden);
 }
