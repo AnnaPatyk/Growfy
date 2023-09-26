@@ -94,6 +94,7 @@ a:hover {
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 10;
   background-color: #0d0d11;
 }
 
@@ -511,7 +512,7 @@ a:hover {
 }
 
 .blok__seven--card {
-  background-color: rgba(129, 129, 139, 0.2);
+  background-color: rgba(129, 129, 139, 0.1);
   border-radius: 1.875rem;
   padding: 4rem 2.5rem;
   display: grid;
@@ -584,7 +585,7 @@ a:hover {
 .blok__nine--card {
   border-radius: 1.5rem;
   overflow: hidden;
-  background-color: rgba(129, 129, 139, 0.2);
+  background-color: rgba(129, 129, 139, 0.1);
 }
 
 .photo__nine--card {
@@ -643,4 +644,31 @@ a:hover {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.4rem;
+}
+
+.blok__ten {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.3125rem;
+  justify-content: space-around;
+  padding: 52px 40px;
+  border-radius: 30px;
+  background: rgba(129, 129, 139, 0.1);
+  margin-bottom: 6rem;
+}
+
+.blok__ten--content {
+  max-width: 373.313px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.title__blok--ten,
+.text__blok--ten {
+  text-align: center;
+}
+
+.blok__ten--button {
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
