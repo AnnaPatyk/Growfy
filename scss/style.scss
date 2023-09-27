@@ -19,6 +19,9 @@ $reset-hover: #9d9d9de5;
 $blue-hover: #437cba;
 $shadow-w: #cccbcb;
 $shadow-d: #479ffd;
+$color-3d6F4: #3d96f4;
+$color5c: #5cc97b;
+$colorff6: #ff6d35;
 
 .wrapper {
    background-color: $background-body;
@@ -606,7 +609,7 @@ body._lock {
    position: relative;
    background-color: $border;
    color: $background-body;
-   max-width: 50%;
+   max-width: 90%;
    padding: 1.875rem;
    border-radius: 1rem;
 }
@@ -707,6 +710,8 @@ body._touch .menu__arrow {
    border-right: 5px solid transparent;
    border-top: 10px solid #fff;
 }
-
+.blok--photo--adapt {
+   display: none;
+}
 //--------------------------media------------------------------------
 @import "_media";
