@@ -160,7 +160,7 @@ body._lock {
 .box__photo--three {
    grid-column: 1/2;
    grid-row: 3/4;
-   @include photo(241.906px, 241.906px, 241.906px 241.906px 0px 241.906px, hidden);
+   @include photo(15.1191rem, 15.1191rem, 15.1191rem 15.1191rem 0rem 15.1191rem, hidden);
 }
 .box__photo--four {
    grid-column: 2/3;
@@ -691,6 +691,9 @@ form {
    left: 50%;
    transform: translateX(-50%);
    @include photo(12.5rem, 12.5rem, 1.875rem, hidden);
+   img {
+      object-fit: cover;
+   }
 }
 //-----------burger menu----------------------------------------------------------------------
 .menu__icon {

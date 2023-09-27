@@ -298,9 +298,7 @@
       grid-row: 2/4;
    }
    .blok__one--photo {
-      grid-row: 1/-1;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 1fr;
+      display: none;
    }
    .box__photo--one {
       grid-column: 3/4;
@@ -512,5 +510,8 @@
    .blok__six--eight--button {
       align-self: center;
       justify-self: center;
+   }
+   form .input-element {
+      grid-template-columns: 1fr !important;
    }
 }

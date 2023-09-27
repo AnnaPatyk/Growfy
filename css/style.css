@@ -260,9 +260,9 @@ body._lock {
 .box__photo--three {
   grid-column: 1/2;
   grid-row: 3/4;
-  max-width: 241.906px;
-  max-height: 241.906px;
-  border-radius: 241.906px 241.906px 0px 241.906px;
+  max-width: 15.1191rem;
+  max-height: 15.1191rem;
+  border-radius: 15.1191rem 15.1191rem 0rem 15.1191rem;
   overflow: hidden;
 }
 
@@ -982,6 +982,10 @@ form .input-element label {
   border-radius: 1.875rem;
   overflow: hidden;
 }
+.popup__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .menu__icon {
   display: none;
@@ -1302,9 +1306,7 @@ body._touch .menu__arrow {
     grid-row: 2/4;
   }
   .blok__one--photo {
-    grid-row: 1/-1;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    display: none;
   }
   .box__photo--one {
     grid-column: 3/4;
@@ -1515,6 +1517,9 @@ body._touch .menu__arrow {
   .blok__six--eight--button {
     align-self: center;
     justify-self: center;
+  }
+  form .input-element {
+    grid-template-columns: 1fr !important;
   }
 }
 .blok__error {
