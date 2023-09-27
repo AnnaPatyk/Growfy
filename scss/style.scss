@@ -29,6 +29,9 @@ $shadow-d: #479ffd;
    margin: 0rem auto;
    padding-inline: 0.5rem;
 }
+body._lock {
+   overflow: hidden;
+}
 //*-----шапка-----------------------------------------------------------------------------------------------*//
 
 .header {
@@ -313,7 +316,7 @@ $shadow-d: #479ffd;
    border-radius: 11.3399rem 11.3399rem 11.3399rem 0rem;
    height: 11.3399rem;
    overflow: hidden;
-   background: url(../img/blok4/orange-w.jfif) 100% 100% / cover no-repeat;
+   background: url(../img/blok4/orange-w.jfif) 50% 100% / cover no-repeat;
 }
 
 //------- five blok-------------------------------------------------------------------------------------------------------
@@ -330,7 +333,7 @@ $shadow-d: #479ffd;
 
 .blok__five--photo {
    @include photo(31.1992rem, 100%, 0rem 28.625rem 23.625rem 23.625rem, hidden);
-   background: url(../img/blok5/orange-m.jfif) 100% 50% / cover no-repeat;
+   background: url(../img/blok5/orange-m.jfif) 50% 50% / cover no-repeat;
 }
 
 //-------------blok six eight----------------------------------------------------------------------------------------------------------------
@@ -451,7 +454,7 @@ $shadow-d: #479ffd;
 }
 //-----------blok ten---------------------------------------------------------------------------------------------------
 .blok__ten {
-   @include grid(grid, 2, auto, 0.3125rem);
+   @include grid(grid, 2, auto, 1rem);
    justify-content: space-around;
    padding: 52px 40px;
    border-radius: 30px;
@@ -467,6 +470,7 @@ $shadow-d: #479ffd;
    text-align: center;
 }
 .blok__ten--button {
+   @include grid(grid, 2, 1fr, 1rem);
    align-self: center;
 }
 //-------------------footer------------------------------------------------------------------
@@ -584,6 +588,7 @@ $shadow-d: #479ffd;
    overflow-y: auto;
    overflow-x: hidden;
    transition: all 0.8s ease 0s;
+   z-index: 2;
 }
 .popup:target {
    opacity: 1;
@@ -594,7 +599,8 @@ $shadow-d: #479ffd;
    display: flex;
    align-items: center;
    justify-content: center;
-   padding: 1.875rem 1.25rem;
+   margin-bottom: 3.125rem;
+   padding: 7.25rem 1.25rem;
 }
 .popup__content {
    position: relative;
@@ -686,6 +692,20 @@ form {
 //-----------burger menu----------------------------------------------------------------------
 .menu__icon {
    display: none;
+}
+.menu__arrow {
+   display: none;
+}
+
+body._touch .menu__arrow {
+   display: block;
+   width: 0;
+   height: 0;
+   margin: 0px 0px 0px 5px;
+   transition: transform 0.3s ease 0s;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 10px solid #fff;
 }
 
 //--------------------------media------------------------------------

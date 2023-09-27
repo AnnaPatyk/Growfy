@@ -11,39 +11,41 @@
      <header class="header" id="header"> 
       <div class="header__container __container">
        <div class="header__logo"><a href="#" class="logo"><img src="./img/logo-growfy.png" alt=""></a></div>
-       <nav class="header--menu menu">
+       <div class="header--menu menu">
          <div class="menu__icon">
             <span></span>
          </div>
-         <ul class="menu__list">
-
+         <nav class="menu__body"><ul class="menu__list">
+         
             <li class="menu__item hover__item">
-               <a href="#home" class="menu__link">Home</a>
+               <a data-goto="#home" href="#home" class="menu__link">Home</a>
             </li>
-
+         
             <li class="menu__item hover__item">
-               <a href="#about" class="menu__link">About</a>
+               <a data-goto="#about" href="#about" class="menu__link">About</a>
             </li>
-
+         
             <li class="menu__item hover__item">
-               <a href="#pages" class="menu__link">Pages</a>
+               <a data-goto="#pages" href="#pages" class="menu__link">Pages</a>
             </li>
-
+         
             <li class="menu__item hover__item">
-               <a href="#sevises" class="menu__link">Services</a>
+               <a data-goto="#sevises" href="#sevises" class="menu__link">Services</a>
             </li>
-
+         
             <li class="menu__item hover__item">
-               <a href="#cart" class="menu__link">Cart</a>
+               <a data-goto="#cart" href="#cart" class="menu__link">Cart</a>
                <a href="" class="menu__link link__zero">0</a>
             </li>
-
+         
             <li class="menu__item button">
-               <a href="#popup" class="menu__link">Get started</a>
+               <a data-goto="" href="#popup" class="menu__link">Get started</a>
             </li>
-
+         
          </ul>
-       </nav>
+         </nav>
+        
+       </div>
       </div>
       
 
@@ -83,7 +85,7 @@
          </div>
 </div>
 <!-- третій блок -->
-<div class="blok__three content__box"  id="sevises">
+<div class="blok__three content__box media__box"  id="sevises">
          <div class="blok__three--text">
             <a href="#popup--four" class="button--services">services</a>
             <h3 class="title--shared  three--title">Services we offer</h3>
@@ -254,7 +256,7 @@
    </div>
 
 
-   <div class="blok__seven--card">
+   <div class="blok__seven--card card__wide">
       <div class="customer--info">
          <div class="customer--img customer--img--green ">
             <img src="./img/blok6/green.jfif" alt="">
@@ -329,7 +331,7 @@
    
       </div>
    </div>
-   <div class="blok__nine--card">
+   <div class="blok__nine--card card__wide card__wide--rotate">
       <div class="photo__nine--card">
          <img src="./img/blok7/card-3.jfif" alt="">
          <div class="position">
@@ -385,26 +387,31 @@
       
       
       <div class="footer__box--list">
-         <h4 class="footer__title">Pages</h4>
-         <ul class="list">
+         <div><a href="" class="footer__title menu--link">Pages</a>
+         <span class="menu__arrow"></span>
+        
+         <ul class="list menu__sub-list">
             <li><a class=" hover__item" href="">Home</a></li>
             <li><a class=" hover__item" href="">About</a></li>
             <li><a class=" hover__item" href="">Services</a></li>
             <li><a class=" hover__item" href="">Packages</a></li>
             <li><a class=" hover__item" href="">Blog</a></li>
             <li><a class=" hover__item" href="">Contact</a></li>
-         </ul>
+         </ul></div>
       </div>
-      <div class="footer__box--list">
-         <h4 class="footer__title">Utility pages</h4>
-         <ul class="list">
+      <div class="footer__box--list footer__box--list-2">
+         <div>
+         <a href="" class="footer__title menu--link">Utility pages</a>
+         <span class="menu__arrow"></span>
+         
+         <ul class="list menu__sub-list">
             <li><a class=" hover__item" href="">Instructions</a></li>
             <li><a class=" hover__item" href="">Style guide</a></li>
             <li><a class=" hover__item" href="">Licenses</a></li>
             <li><a class=" hover__item" href="">Changelog</a></li>
             <li><a class=" hover__item" href="">404 Not found</a></li>
             <li><a  class=" hover__item"href="">Password protected</a></li>
-         </ul>
+         </ul></div>
       </div>
       <div class="footer__box--subscribe">
          <h4 class="footer__title">Subscribe to our newsletter</h4>
