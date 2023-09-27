@@ -471,7 +471,7 @@ body._lock {
   border-radius: 11.3399rem 11.3399rem 11.3399rem 0rem;
   height: 11.3399rem;
   overflow: hidden;
-  background: url(../img/blok4/orange-w.jfif) 50% 100%/cover no-repeat;
+  background: url(../img/blok4/orange-w.jfif) 50% 0%/cover no-repeat;
 }
 
 .blok__five {
@@ -1306,7 +1306,7 @@ body._touch .menu__arrow {
     grid-row: 2/4;
   }
   .blok__one--photo {
-    display: none;
+    display: none !important;
   }
   .box__photo--one {
     grid-column: 3/4;
@@ -1337,10 +1337,10 @@ body._touch .menu__arrow {
     gap: 1rem;
   }
   .bloc__photo--box--one {
-    height: 28rem;
+    height: 100%;
   }
   .bloc__photo--box--two {
-    height: 22rem;
+    height: 50%;
   }
   .list {
     justify-self: center;
@@ -1499,12 +1499,6 @@ body._touch .menu__arrow {
   }
   .card {
     padding: 1.5rem;
-  }
-  .bloc__photo--box--one {
-    height: 15rem;
-  }
-  .bloc__photo--box--two {
-    height: 12rem;
   }
   .card__container--two {
     padding-bottom: 0rem;

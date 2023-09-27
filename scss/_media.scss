@@ -298,8 +298,9 @@
       grid-row: 2/4;
    }
    .blok__one--photo {
-      display: none;
+      display: none !important;
    }
+
    .box__photo--one {
       grid-column: 3/4;
       grid-row: 1/-1;
@@ -329,10 +330,10 @@
       gap: 1rem;
    }
    .bloc__photo--box--one {
-      height: 28rem;
+      height: 100%;
    }
    .bloc__photo--box--two {
-      height: 22rem;
+      height: 50%;
    }
    .list {
       justify-self: center;
@@ -494,12 +495,7 @@
    .card {
       padding: 1.5rem;
    }
-   .bloc__photo--box--one {
-      height: 15rem;
-   }
-   .bloc__photo--box--two {
-      height: 12rem;
-   }
+
    .card__container--two {
       padding-bottom: 0rem;
    }
