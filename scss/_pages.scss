@@ -1,0 +1,131 @@
+@import "_colors";
+
+.about__container {
+   @include grid(grid, 1, 1fr, 6.25rem);
+}
+.content__about {
+   @include grid(grid, 1, 1fr, 1.5rem);
+}
+
+.bg-pages-img {
+   background: url(../img/blok1/man--yelow--blok1.jfif) 100% 20% / cover no-repeat;
+   height: 15.625rem;
+   width: 100%;
+   border-radius: 1rem;
+}
+.bg-pages-img2 {
+   background: url(../img/blok1/man-blue--blok1.jfif) 100% 20% / cover no-repeat;
+   height: 15.625rem;
+   width: 100%;
+   border-radius: 1rem;
+}
+.bg-pages-img3 {
+   background: url(../img/blok1/woman--green--blok1.jfif) 100% 30% / cover no-repeat;
+   height: 15.625rem;
+   width: 100%;
+   border-radius: 1rem;
+}
+.pages__head {
+   @include grid(grid, 3, 1fr, 3.125rem);
+}
+.subtitle {
+   color: $border;
+   font-size: 2rem;
+}
+.title__about {
+   font-size: 70px;
+   max-width: 80%;
+   margin-bottom: 3.125rem;
+}
+.text__pages {
+   @include grid(grid, 2, 1fr, 2.25rem);
+}
+
+.pages__text--blok1 {
+   p {
+      @include font(1rem, 400, 1.5);
+   }
+}
+.pages__text--blok1,
+.page__text--blok2 {
+   @include grid(grid, 1, 1fr, 2.25rem);
+}
+.blok__pages--cards {
+   @include grid(grid, 1, 1fr, 2.25rem);
+}
+.photo__pages--card {
+   max-height: 100%;
+   position: relative;
+   max-width: 100%;
+   overflow: hidden;
+}
+.content__pages--card {
+   padding: 0.875rem;
+}
+.text__page--card {
+   @include font(1rem, 300, 1.5);
+   color: $color-9c;
+   margin-bottom: 0.75rem;
+}
+.taitle__page--card {
+   @include font(1.2rem, 400, 1.68rem);
+   margin-bottom: 0.75rem;
+}
+.link__page--card {
+   @include font(0.875rem, 300, 0.7125rem);
+   color: $color-3D96F4;
+}
+.card--page {
+   @include grid(grid, 2, auto, 2.25rem);
+   border-radius: 1rem;
+   overflow: hidden;
+   max-height: 31.25rem;
+   background-color: $color-129-20;
+}
+.photo__pages--card {
+   overflow: hidden;
+   img {
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: left;
+      object-position: left;
+   }
+}
+.img-page-card {
+   -o-object-position: center;
+   object-position: center !important;
+}
+
+@media (max-width: 62rem) {
+   .text__pages {
+      grid-template-columns: 1fr;
+   }
+   .title__about {
+      max-width: 100%;
+   }
+   .about__container {
+      gap: 2rem;
+   }
+   .title__about {
+      font-size: 2.625rem;
+   }
+   .pages__head {
+      gap: 1rem;
+   }
+}
+@media (max-width: 36rem) {
+   .bg-pages-img,
+   .bg-pages-img2 {
+      display: none;
+   }
+   .pages__head {
+      grid-template-columns: 1fr;
+   }
+   .card--page {
+      grid-template-columns: 1fr;
+   }
+   .taitle__page--card {
+      text-align: center;
+      font-size: 1.5rem;
+   }
+}

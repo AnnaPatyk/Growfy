@@ -1,0 +1,60 @@
+@import "_colors";
+
+.about__container {
+   @include grid(grid, 1, 1fr, 6.25rem);
+}
+.content__about {
+   @include grid(grid, 1, 1fr, 1.5rem);
+}
+
+.bg-img {
+   background: url(../img/blok7/card-1.jfif) 100% 50% / cover no-repeat;
+   height: 15.625rem;
+   width: 100%;
+   border-radius: 1rem;
+}
+.bg-img2 {
+   background: url(../img/blok7/card-2.jfif) 100% 50% / cover no-repeat;
+   height: 15.625rem;
+   width: 100%;
+   border-radius: 1rem;
+}
+.bg-img3 {
+   background: url(../img/blok7/card-3.jfif) 100% 50% / cover no-repeat;
+   height: 15.625rem;
+   width: 100%;
+   border-radius: 1rem;
+}
+.about__head {
+   @include grid(grid, 3, 1fr, 3.125rem);
+}
+.subtitle {
+   color: $border;
+   font-size: 2rem;
+}
+.title__about {
+   font-size: 70px;
+   max-width: 80%;
+   margin-bottom: 3.125rem;
+}
+.text__about {
+   @include grid(grid, 2, 1fr, 2.25rem);
+}
+.img--text-1 {
+   background: url(../img/blok1/woman--green--blok1.jfif) 100% 30% / cover no-repeat;
+   height: 21.875rem;
+   border-radius: 1rem;
+}
+.img--text-2 {
+   background: url(../img/blok1/man--yelow--blok1.jfif) 100% 15% / cover no-repeat;
+   height: 18.75rem;
+   border-radius: 1rem;
+}
+.about__text--blok1,
+.about__text--blok2 {
+   @include grid(grid, 1, 1fr, 2.25rem);
+   p {
+      @include font(1.5rem, 400, 1.5);
+   }
+}
+@import "_aboutmedia";

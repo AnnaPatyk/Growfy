@@ -1,0 +1,143 @@
+@import "_colors";
+
+.services__container {
+   @include grid(grid, 1, 1fr, 7rem);
+}
+.services__title--blok {
+   @include grid(grid, 1, 1fr, 2rem);
+}
+.services__sabtitle {
+   @include font(1.5rem, 400, 1.5);
+
+   color: $color-9c;
+   max-width: 60%;
+}
+
+.services__title {
+   @include font(4rem, 600, 1.5);
+   letter-spacing: 0.5rem;
+}
+
+.services__img--blok {
+   @include grid(grid, 2, 1fr, 0rem);
+}
+.services__img-1 {
+   background: url(../img/blok7/card-2.jfif) 100% 50% / cover no-repeat;
+   height: 18.75rem;
+   border-radius: 1rem 0rem 0rem 0rem;
+}
+.border-img-1 {
+   border-right: 0.0625rem solid $color-white;
+   border-bottom: 0.0625rem solid $color-white;
+   padding: 0rem 1.5rem 1.5rem 0rem;
+}
+
+.services__img-2 {
+   background: url(../img/blok1/man-blue--blok1.jfif) 100% 30% / cover no-repeat;
+   height: 18.75rem;
+   border-radius: 0rem 1rem 0rem 0rem;
+}
+.border-img-2 {
+   border-left: 0.0625rem solid $color-white;
+   border-bottom: 0.0625rem solid $color-white;
+   padding: 0rem 0rem 1.5rem 1.5rem;
+}
+.services__img-3 {
+   background: url(../img/blok1/man--yelow--blok1.jfif) 100% 20% / cover no-repeat;
+   height: 18.75rem;
+   border-radius: 0rem 0rem 0rem 1rem;
+}
+.border-img-3 {
+   border-right: 0.0625rem solid $color-white;
+   border-top: 0.0625rem solid $color-white;
+   padding: 1.5rem 1.5rem 0rem 0rem;
+}
+.services__img-4 {
+   background: url(../img/blok7/card-3.jfif) 100% 20% / cover no-repeat;
+   height: 18.75rem;
+   border-radius: 0rem 0rem 1rem 0rem;
+}
+.border-img-4 {
+   border-left: 0.0625rem solid $color-white;
+   border-top: 0.0625rem solid $color-white;
+   padding: 1.5rem 0rem 0rem 1.5rem;
+}
+
+.services__content--blok {
+   @include grid(grid, 2, 1fr, 2rem);
+}
+
+.services__content--box1 {
+   @include grid(grid, 1, 1fr, 1.5rem);
+   h3 {
+      @include font(5rem, 600, 1.5);
+   }
+}
+
+.services__content--img-1 {
+   background: url(../img/blok7/card-1.jfif) 100% 20% / cover no-repeat;
+   height: 18.75rem;
+   width: 80%;
+   border-radius: 0.5rem;
+   overflow: hidden;
+}
+.services__content--img-2 {
+   background: url(../img/blok1/man--orange--blok1.jfif) 100% 20% / cover no-repeat;
+   width: 80%;
+   height: 31.25rem;
+   border-radius: 0.5rem;
+   overflow: hidden;
+}
+.services__content--box2 {
+   @include grid(grid, 1, 1fr, 1.5rem);
+   align-self: start;
+}
+.services__content--box2 :nth-child(odd) {
+   color: $color-white;
+   padding-bottom: 2rem;
+   border-bottom: 0.25rem solid $color-white;
+   @include font(1.5rem, 600, 1.5);
+   letter-spacing: 0.125rem;
+}
+.services__content--box2 :nth-child(even) {
+   color: $color-9c;
+   padding-bottom: 2rem;
+   border-bottom: 0.125rem solid $color-white;
+   @include font(1rem, 400, 1.5);
+   letter-spacing: 0.25rem;
+}
+
+@media (max-width: 62rem) {
+   .services__title--blok {
+      text-align: center;
+   }
+   .services__sabtitle {
+      max-width: 100%;
+   }
+   .services__img-1,
+   .services__img-3,
+   .services__img-4 {
+      background-position-x: 50%;
+   }
+   .services__content--box1 {
+      align-self: start;
+      gap: 5rem;
+      h3 {
+         font-size: 3.5rem;
+         text-align: center;
+      }
+   }
+   .services__content--img-1,
+   .services__content--img-2 {
+      align-self: start;
+      width: 100%;
+   }
+}
+@media (max-width: 47.9375rem) {
+   .services__content--blok {
+      grid-template-columns: 1fr;
+   }
+   .services__content--img-2 {
+      display: none;
+   }
+}
