@@ -1,4 +1,6 @@
 @import "_colors";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Poppins:wght@300;400;500&display=swap");
+
 
 .about__container {
    @include grid(grid, 1, 1fr, 6.25rem);

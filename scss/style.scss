@@ -13,7 +13,7 @@
 .__container {
    max-width: 82.25rem;
    margin: 0rem auto;
-   padding-inline: 0.5rem;
+   padding-inline: 1rem;
 }
 body._lock {
    overflow: hidden;
@@ -115,7 +115,16 @@ body._lock {
 .blok__one {
    margin-bottom: 12.0625rem;
 }
-
+.blok__one--text {
+   position: relative;
+}
+.dot-img {
+   max-width: 7.625rem;
+   max-height: 7.625rem;
+   position: absolute;
+   top: -1rem;
+   left: -2rem;
+}
 .__one--title {
    margin-bottom: 1.75rem;
    max-width: 31.625rem;
@@ -289,9 +298,21 @@ body._lock {
    transform: translateY(-50%);
 }
 .blok__four--photo {
+   position: relative;
+
    @include grid-no-repeat(0.7fr, 0.3fr, 0rem);
 }
+.dot-img-four {
+   max-width: 7.625rem;
+   max-height: 7.625rem;
+   position: absolute;
+   bottom: 0rem;
+   left: 0rem;
+   z-index: 1;
+}
 .bloc__photo--box--one {
+   position: relative;
+   z-index: 2;
    height: 49.0996rem;
    border-radius: 44.625rem 0rem 23.625rem 23.625rem;
    overflow: hidden;
