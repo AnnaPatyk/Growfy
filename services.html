@@ -171,7 +171,87 @@
 </footer>
    </div>
 
+<!-- модальне вікно один -->
+<div id="popup" class="popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <a href="#header" class="popup__close">X</a>
+         <div class="popup__title">
+            <h3>Get start</h3>
+         </div>
+         <form method="post" action="" enctype="text/plain">
 
+            <p>
+               <label for="login" accesskey="l">login: </label>
+               <input type="text" name="login" id="login">
+            </p>
+
+            <p>
+               <label for="pass" accesskey="p">Password:</label>
+               <input type="password" name="pass" id="pass">
+            </p>
+
+            <p class="form--button">
+               <button class="reset" type="reset" value="Reset">Reset</button>
+               <button class="submit" type="submit" value="Send">Send</button>
+            </p>
+         </form>
+      </div>
+   </div>
+</div>
+<!-- модальне вікно два -->
+<div id="popup--two" class="popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <a href="#header" class="popup__close">X</a>
+
+         <form action="" class="form">
+            <h3 class="popup__title"> Contact form</h3>
+            <div class="input-element">
+               <label for="username">Name:</label>
+               <input type="text" id="username" name="username">
+            </div>
+
+            <div class="input-element">
+               <label for="usermail">Email:</label>
+               <input type="email" id="usermail" name="usermail">
+            </div>
+
+            <div class="form--button--popup2">
+               <button class="submit" type="submit">Send my message</button>
+
+            </div>
+
+         </form>
+      </div>
+   </div>
+</div>
+<!--модальне вікно три-->
+<div id="popup--three" class="popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <a href="#header" class="popup__close">X</a>
+         <div class="phone-form">
+
+            <h3 class="popup__title">+31234567890</h3>
+            <a class="form--button--popup2" href="tel:1234567890"><button class="submit"
+                  type="submit">Зателефонувати</button></a>
+         </div>
+      </div>
+   </div>
+</div>
+<!--модальне вікно чотири-->
+<div id="popup--four" class="popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <a href="#header" class="popup__close">X</a>
+
+         <h3 class="popup__title pop__up--title">Вікно з корисною інформацією</h3>
+         <div class="popup__img"><img src="./img/popup.jpg" alt=""></div>
+
+
+      </div>
+   </div>
       <script src="js/script.js"></script>
 </body>
 
